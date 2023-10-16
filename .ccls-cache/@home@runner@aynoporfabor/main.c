@@ -126,7 +126,7 @@ int main(void) {
         printf("Se han encontrado %d libros con el título ingresado.\n", list_size(librosEncontrados));
         for (int i = 0; i < list_size(librosEncontrados); i++) {
           libro* libros = list_get(librosEncontrados, i);
-          printf("%d. %s\n", libro->id, libro->titulo);
+          printf("%d. %s\n", libros->id, libros->titulo);
         }
         break;
       }
@@ -162,6 +162,6 @@ int main(void) {
       }
     }
   } while (opcion != 0);
-
+  
   return 0;
 }
